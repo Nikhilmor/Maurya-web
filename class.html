@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MAURYA - Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+
+    <div id="home" class="page">
+        <img src="ravanlogo.png" alt="MAURYA" width="200px" height="200px" class="logo">
+        <div class="box">
+            <h1>Welcome To MAURYA</h1>
+            <button onclick="showPage('login')">LOGIN</button>
+            <button onclick="showPage('register')">REGISTRATION</button>
+        </div>
+    </div>
+
+    <div id="login" class="page">
+        <img src="ravanlogo.png" alt="MAURYA" width="200px" height="200px" class="logo">
+        <div class="box">
+            <h1>Login</h1>
+            <br>
+            <input type="text" placeholder="User ID"><br>
+            <input type="password" placeholder="Password"><br>
+            <button onclick="showPage('home')">Back</button>
+            <button onclick="showPage('homepage')">Login</button>
+        </div>
+    </div>
+
+    <div id="register" class="page">
+        <img src="ravanlogo.png" alt="MAURYA" width="200px" height="200px" class="logo">
+        <div class="box">
+            <h1>Registration</h1>
+            <br>
+            <input type="text" placeholder="Name"><br>
+            <input type="number" placeholder="Phone Number"><br>
+            <input type="email" placeholder="Email"><br>
+            <input type="password" placeholder="Password"><br>
+            <button onclick="showPage('home')">Back</button>
+        </div>
+    </div>
+
+    <div id="homepage" class="page">
+        <div class="social-navbar">
+            <div class="social-logo">MAURYA</div>
+        </div>
+
+        <div class="home-container">
+            <div class="feed">
+                <div class="stories">
+                    <div class="story">
+
+                        <p>Your Story</p>
+                    </div>
+                    <div class="story">
+
+                        <p>st mary's</p>
+                    </div>
+                    <div class="story">
+
+                        <p>modi</p>
+                    </div>
+                    <div class="story">
+
+                        <p>CRT</p>
+                    </div>
+                    <div class="story">
+
+                        <p>MISS</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-avatar"></div>
+                        <div>
+                            <h3>MAURYA User</h3>
+                            <p>Just now</p>
+                        </div>
+                    </div>
+                    <div class="post-image">🔥</div>
+                    <div class="post-actions">
+                        <span>❤️</span>
+                        <span>💬</span>
+                        <span>↗️</span>
+                        <span>🔖</span>
+                    </div>
+                    <div class="post-content">
+                        <strong>MAURYA User</strong>
+                        <p>Welcome to MAURYA social network!</p>
+                    </div>
+                </div>
+
+                <div class="suggestions-feed">
+                    <h2>Suggested for you</h2>
+                    <div class="suggestion-scroll">
+                        <div class="suggestion-user">
+                            <div class="suggestion-avatar"></div>
+                            <p>Rahul</p>
+                            <small>Suggested for you</small>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        <div class="suggestion-user">
+                            <div class="suggestion-avatar"></div>
+                            <p>Priya</p>
+                            <small>Suggested for you</small>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        <div class="suggestion-user">
+                            <div class="suggestion-avatar"></div>
+                            <p>Aman</p>
+                            <small>Suggested for you</small>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        <div class="suggestion-user">
+                            <div class="suggestion-avatar"></div>
+                            <p>Neha</p>
+                            <small>Suggested for you</small>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-avatar"></div>
+                        <div>
+                            <h3>St mary's</h3>
+                            <p>10 minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="post-image">🚀</div>
+                    <div class="post-actions">
+                        <span>❤️</span>
+                        <span>💬</span>
+                        <span>↗️</span>
+                        <span>🔖</span>
+                    </div>
+                    <div class="post-content">
+                        <strong>St mary's</strong>
+                        <p>Enjoying my day on MAURYA.</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-avatar"></div>
+                        <div>
+                            <h3>Miss</h3>
+                            <p>25 minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="post-image">🌟</div>
+                    <div class="post-actions">
+                        <span>❤️</span>
+                        <span>💬</span>
+                        <span>↗️</span>
+                        <span>🔖</span>
+                    </div>
+                    <div class="post-content">
+                        <strong>Miss</strong>
+                        <p>Having a great day!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile" class="page">
+        <div class="social-navbar">
+            <div class="social-logo">MAURYA</div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-header">
+                 
+                <div class="profile-avatar">
+
+                </div>
+                <div class="profile-info">
+                    <h1>N I K H I L M A U R Y A</h1>
+                    <p>Welcome to my MAURYA profile.</p>
+                    <p>📞+91 7277043116</p>
+                    <p>✉️nikhilkrmorya.in@gmail.com</p>
+
+                    <div class="profile-stats">
+
+                        <div>
+                            <strong>120</strong>
+                            <span>Posts</span>
+                        </div>
+                        <div>
+                            <strong>1.5K</strong>
+                            <span>Followers</span>
+                        </div>
+                        <div>
+                            <strong>350</strong>
+                            <span>Following</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-posts">
+                <div class="profile-post">🔥</div>
+                <div class="profile-post">🚀</div>
+                <div class="profile-post">❤️</div>
+                <div class="profile-post">😎</div>
+                <div class="profile-post">🌟</div>
+                <div class="profile-post">🎯</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="massage" class="page">
+        <div class="social-navbar">
+            <div class="social-logo">MESSAGES</div>
+        </div>
+
+        <div class="message-container">
+            <div class="chat-list">
+                <h2>Messages</h2>
+                <div class="chat-user">
+                    <div class="chat-avatar"></div>
+                    <span>St mary's</span>
+                </div>
+                <div class="chat-user">
+                    <div class="chat-avatar"></div>
+                    <span>Miss</span>
+                </div>
+                <div class="chat-user">
+                    <div class="chat-avatar"></div>
+                    <span>Modi</span>
+                </div>
+            </div>
+
+            <div class="chat-window">
+                <div class="chat-header">St mary's</div>
+                <div class="chat-messages">
+                    <div class="message received">Hello!</div>
+                    <div class="message sent">Hi, how are you?</div>
+                    <div class="message received">I am good. What about you?</div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Message...">
+                    <button>Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reel" class="page">
+        <div class="social-navbar">
+            <div class="social-logo">REELS</div>
+        </div>
+
+        <div class="reels-container">
+            <div class="reel-card">
+                🎬
+                <div class="reel-info">
+                    <h3>MAURYA User</h3>
+                    <p>Welcome to MAURYA Reels!</p>
+                </div>
+                <div class="reel-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>↗️</span>
+                    <span>🔖</span>
+                </div>
+            </div>
+
+            <div class="reel-card">
+                🚀
+                <div class="reel-info">
+                    <h3>Rahul</h3>
+                    <p>Enjoy the latest reel.</p>
+                </div>
+                <div class="reel-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>↗️</span>
+                    <span>🔖</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="create" class="page">
+        <div class="social-navbar">
+            <div class="social-logo">CREATE</div>
+        </div>
+
+        <div class="create-container">
+            <div class="create-box">
+                <h1>Create</h1>
+                <div class="create-option">📷 Create Post</div>
+                <div class="create-option">🎬 Create Reel</div>
+                <div class="create-option">📖 Create Story</div>
+                <div class="create-option">🔴 Go Live</div>
+                <div class="create-option">👻 Create Snap</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="showPage('homepage')">
+            <span>🏠</span>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showPage('reel')">
+            <span>🎬</span>
+            <span>Reels</span>
+        </div>
+        <div class="nav-item" onclick="showPage('create')">
+            <span>➕</span>
+            <span>Create</span>
+        </div>
+        <div class="nav-item" onclick="showPage('massage')">
+            <span>💬</span>
+            <span>Messages</span>
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <span>👤</span>
+            <span>Profile</span>
+        </div>
+    </div>
+
+    <footer>
+        <h3>
+            <b>Created by</b> N I K H I L<br>
+            <b>Contact me at</b><br>
+            nikhilkrmorya.in@gmail.com<br>
+            +91 7277043116
+        </h3>
+        <p>&copy; 2026 My Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
